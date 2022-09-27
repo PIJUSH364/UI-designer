@@ -1,7 +1,26 @@
 import React from "react";
+import { useEffect } from "react";
 import "./Whyus.css";
-import whyimg from "../images/pijush.png";
+// import whyimg from "../images/pijush.png";
 function Whyus() {
+  useEffect(() => {
+    const hiddenElement = document.querySelectorAll(".hidden--why");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add("show--why");
+        } else {
+          e.target.classList.remove("show--why");
+        }
+      });
+    });
+
+    hiddenElement.forEach((el) => {
+      observer.observe(el);
+      // console.log(el);
+    });
+  }, []);
   return (
     <div
       className="whyus"
@@ -11,7 +30,7 @@ function Whyus() {
       // }}
     >
       <div className="whyusleft"></div>
-      <div className="whyusright">
+      <div className="whyusright hidden--why">
         {" "}
         <p className="whyus-title">
           Why&nbsp;<span>us</span>

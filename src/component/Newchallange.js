@@ -1,6 +1,6 @@
 import React from "react";
 import "./Newchallange.css";
-import challange from "../images/pijush5.png";
+// import challange from "../images/pijush5.png";
 
 function Newchallange() {
   return (

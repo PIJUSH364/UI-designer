@@ -67,6 +67,29 @@
   font-weight: 600;
   padding: 1em 1.4em;
   border: none;
+  transition: all 1.2s ease-in-out;
+}
+.about .about-button:hover {
+  background-color: #fff;
+  color: #5624d0;
+  transform: translateY(0.2em);
+}
+
+.about .about-button::before {
+  content: "";
+  position: absolute;
+  width: 8.4em;
+  height: 3.3em;
+  left: -6px;
+  filter: blur(5px);
+  opacity: 0;
+  bottom: 7px;
+  transition: all 1.8s ease-in-out;
+}
+.about .about-button:hover.about-button::before {
+  opacity: 1;
+  outline: 2px solid #fff;
+  filter: blur(0);
 }
 .readmore-about-button {
   padding: 3em 0em;

@@ -50,7 +50,7 @@ function Course() {
         <div className="course-box">
           <div className="courseNo">.03</div>
           <div className="course-deatils">
-          <p className="course--serial">
+            <p className="course--serial">
               COURSE<span>&nbsp;03</span>
             </p>
             <p id="course-description">

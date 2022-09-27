@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Carousal from "./component/Carousal";
+// import Carousal from "./component/Carousal";
 import Course from "./component/Course";
 import Nav from "./component/Nav";
 import Newchallange from "./component/Newchallange";

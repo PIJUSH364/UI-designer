@@ -1,6 +1,6 @@
 import "./Videosecton.css";
 import React from "react";
-import video from "../video/v2.mp4";
+// import video from "../video/v2.mp4";
 import poster from "../images/p3.png";
 function Videosecton() {
   return (
