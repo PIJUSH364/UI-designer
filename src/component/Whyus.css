@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --uniqueColor1: #cec0fc;
+  --uniqueColor2: #5624d0;
+  --uniqueColor3: #9577f9;
+  --uniqueBackground: #1c1d1f;
+  --uniqueBorder-top: 1px solid #3e4143;
+  --uniqueFontFamily: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+    Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol;
+  --uniqueFontWeight: 400;
+  --uniqueLineHeight: 1.4;
+  --uniqueFontSize: 2.4rem;
+}
+.whyus {
+  color: #fff;
+  background-color: #171717;
+  padding: 3.4em 8em;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.whyusleft {
+  width: 50%;
+}
+.whyusright {
+  width: 50%;
+}
+.whyus-title {
+  font-size: 65px;
+  font-weight: 600;
+}
+.whyus-description {
+  font-size: 16px;
+  font-weight: 500;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  margin: 2em 0;
+  text-align: justify;
+  padding: 2em 0;
+}
+.whyus-button {
+  background-color: var(--uniqueColor3);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 1em 1.4em;
+  border: none;
+}
+.whyus .whyus-title > span {
+  color: var(--uniqueColor3);
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+@media (max-width: 800px) {
+  .whyus {
+    padding: 3.4em 4em;
+  }
+}
+@media (max-width: 500px) {
+  .whyusleft {
+    width: auto;
+  }
+  .whyusright {
+    width: auto;
+  }
+  .whyus {
+    padding: 1.4em 1em;
+  }
+  .whyus-description {
+    margin: 0em 0;
+    padding: 1.5em 0;
+    font-weight: 0;
+    line-height: 22px;
+    word-spacing: 2px;
+  }
+  .whyus-title {
+    font-size: 43px;
+  }
+  .whyus .whyus-title > span {
+    color: var(--uniqueColor3);
+    font-size: 28px;
+  }
+  .whyus-button {
+    float: right;
+  }
+}

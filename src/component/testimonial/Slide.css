@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --uniqueColor1: #cec0fc;
+  --uniqueColor2: #5624d0;
+  --uniqueColor3: #9577f9;
+  --uniqueBackground: #1c1d1f;
+  --uniqueBorder-top: 1px solid #3e4143;
+  --uniqueFontFamily: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+    Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol;
+  --uniqueFontWeight: 400;
+  --uniqueLineHeight: 1.4;
+  --uniqueFontSize: 2.4rem;
+}
+/* special */
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -2px !important;
+  left: 0;
+  width: 100%;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background: var(--uniqueColor2) !important;
+}
+.testimonialSlider--container {
+  margin: 3em 0;
+}
+.slide--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 1em 2em;
+}
+.user--image img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  border: 3px solid var(--uniqueColor2);
+}
+.user--name p {
+  margin: 0.61em 0;
+  font-weight: 600;
+  font-family: var(--uniqueFontFamily);
+}
+.user--review {
+  font-family: var(--uniqueFontFamily);
+  font-weight: 400;
+  text-align: justify;
+  line-height: 23px;
+  position: relative;
+}
+.user--review p {
+  padding: 0 1.8em;
+}
+.user--review p::before {
+  content: "\f10d";
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  font-size: 1.8rem;
+  font-weight: 900;
+  height: 30px;
+  width: 30px;
+  left: -5px;
+  top: -8px;
+  color: #5624d0;
+}
+.user--review p::after {
+  content: "\f10e";
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  font-size: 1.8rem;
+  font-weight: 900;
+  height: 30px;
+  width: 30px;
+  bottom: -15px;
+  right: -5px;
+  color: #5624d0;
+}
+.user--rating i {
+  color: #5624d0;
+}
+.user--rating img {
+  height: 20px;
+}
+.user--rating {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0.5em;
+  gap: 0.3em;
+}
+
+@media (max-width: 1000px) {
+  .user--image img {
+    /* display: none; */
+  }
+}

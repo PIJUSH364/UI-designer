@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --uniqueColor1: #cec0fc;
+  --uniqueColor2: #5624d0;
+  --uniqueColor3: #9577f9;
+  --uniqueBackground: #1c1d1f;
+  --uniqueBorder-top: 1px solid #3e4143;
+  --uniqueFontFamily: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+    Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol;
+  --uniqueFontWeight: 400;
+  --uniqueLineHeight: 1.4;
+  --uniqueFontSize: 2.4rem;
+}
+.newsletter {
+  font-family: var(--uniqueFontFamily);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  padding-top: 1em;
+  /* padding: 1em 3.5em 2.7em 3.5em; */
+  background-color: #171717;
+  color: #fff;
+}
+.newsletter .newsletter-left {
+  width: 50%;
+  color: red;
+  background-image: url(/public/images/pijush\ 7.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.newsletter .newsletter-right {
+  width: 50%;
+  padding: 2em 3.5em 4em 7em;
+}
+.newsletter .newsletter-right .newsletter-description {
+  padding: 2em;
+  text-align: center;
+}
+.newsletter-right .newsletter-description > h2 {
+  color: var(--uniqueColor3);
+  font-size: 33px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+.pd-des {
+  margin-top: 0.5em;
+  letter-spacing: 1px;
+}
+
+.newsletter .newsletter-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2em;
+  margin: 0 1em;
+}
+form .pd-form {
+  padding: 1.1em 1.8em;
+  resize: none;
+  border: 2px solid var(--uniqueColor3);
+  color: #fff;
+  outline: none;
+  background-color: #171717;
+}
+form .button-message {
+  border: none;
+  margin-top: 1em;
+  background-color: var(--uniqueColor3);
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  padding: 0.8em 1.6em;
+}
+form .button-box {
+  display: flex;
+  justify-content: center;
+}
+.input-placeholder::placeholder {
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+@media (max-width: 800px) {
+  .newsletter {
+    padding: 2em;
+    padding-bottom: 5em;
+  }
+  .newsletter .newsletter-left {
+    display: none;
+  }
+  .newsletter .newsletter-right {
+    width: auto;
+    padding: 0em;
+  }
+  .newsletter .newsletter-right form {
+    margin: 0 5em;
+  }
+  .newsletter .newsletter-right .newsletter-description {
+    padding: 2em 5em;
+  }
+}
+@media (max-width: 500px) {
+  .newsletter .newsletter-right form {
+    margin: 0;
+  }
+  .newsletter .newsletter-right .newsletter-description {
+    padding: 2em 0em;
+  }
+}

@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --uniqueColor1: #cec0fc;
+  --uniqueColor2: #5624d0;
+  --uniqueColor3: #9577f9;
+  --uniqueBackground: #1c1d1f;
+  --uniqueBorder-top: 1px solid #3e4143;
+  --uniqueFontFamily: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+    Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol;
+  --uniqueFontWeight: 400;
+  --uniqueLineHeight: 1.4;
+  --uniqueFontSize: 2.4rem;
+}
+.challenge {
+  background-color: #171717;
+  padding: 5.3em 3.5em;
+  /* height: 60vh; */
+  color: #fff;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.challenge .section-title .one,
+.three {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.challenge .section-title .two {
+  font-size: 43px;
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
+.challenge .button-challenge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #8a8a8a;
+  font-size: 33px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding-top: 3em;
+}
+.challenge .button-challenge p i {
+  color: #fff;
+  transform: scaleY(1.57);
+}
+/* responsive */
+@media (max-width: 500px) {
+  .challenge {
+    padding: 3.3em 1em 2em 1em;
+  }
+  .challenge .section-title .one,
+  .three {
+    font-size: 28px;
+  }
+  .challenge .section-title .two {
+    font-size: 23px;
+  }
+  .challenge .button-challenge {
+    font-size: 23px;
+    padding-top: 5em;
+  }
+}

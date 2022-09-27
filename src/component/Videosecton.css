@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --uniqueColor1: #cec0fc;
+  --uniqueColor2: #5624d0;
+  --uniqueColor3: #9577f9;
+  --uniqueBackground: #1c1d1f;
+  --uniqueBackground2: #171717;
+  --uniqueBorder-top: 1px solid #3e4143;
+  --uniqueFontFamily: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+    Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol;
+  --uniqueFontWeight: 400;
+  --uniqueLineHeight: 1.4;
+  --uniqueFontSize: 2.4rem;
+}
+.video-section {
+  display: flex;
+  background-color: var(--uniqueBackground2);
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3em 1em;
+  font-size: 0.91em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.video-section .sub-viseo-title {
+  display: flex;
+  transform: rotate(90deg);
+  gap: 1em;
+  align-items: center;
+}
+.video-section video {
+  width: 68vw;
+  background-color: rgb(200, 198, 198);
+}
+.video-section .sub-viseo-title .sub-title-front {
+  transform: rotate(180deg);
+  text-align: right;
+}
+.video-section .sub-viseo-title .sub-title-rear {
+  transform: rotate(180deg);
+  text-align: left;
+}
+.video-section .sub-viseo-title .fa-arrow-left-long,
+.fa-arrow-right-long {
+  transform: scaleX(1.7);
+}
+@media (max-width: 800px) {
+  .video-section {
+    padding: 7em 1em;
+  }
+  .video-section video {
+    width: 48vw;
+  }
+}
+@media (max-width: 500px) {
+  .video-section {
+    padding: 9em 0em;
+    font-size: 10px;
+  }
+  .video-section video {
+    width: 24vh;
+  }
+}

@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* nav bar */
+.navbar {
+  display: flex;
+  background-color: #171717;
+  color: #fff;
+  padding: 1.3em;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-menu-list ul {
+  display: flex;
+  gap: 35%;
+  list-style-type: none;
+}
+.sign-menu {
+  display: flex;
+  column-gap: 4em;
+}
+.login-button .button {
+  padding: 0.3em 0.5em;
+  font-size: 14px;
+  /* font-weight: 600; */
+  color: #171717;
+  background: #fff;
+  border: none;
+}
+.nav-menu-list ul li:hover {
+  color: purple;
+  cursor: pointer;
+}
+/* CAROUSAL */
+/* ===== */
+/* ACHIVEMENT */
+.achievement {
+  background-color: #171717;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 3em;
+}
+.achievement .number {
+  display: flex;
+  align-items: center;
+}
+.achievement .number i {
+  color: purple;
+}
+.achievement .achievement-box {
+  display: flex;
+  gap: 5px;
+}
+.achievement .achievement-box .subtag {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #8a8a8a;
+}
+.achievement .achievement-box .maintag {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+/*  <!-- new challenge --> */
+.challenge {
+  background-color: #171717;
+  height: 60vh;
+  color: #fff;
+  border-top: 1px solid #fff;
+  text-align: center;
+  background-image: url("./images/pijush5.png");
+  background-position: center;
+  background-size: 80% 70%;
+  background-repeat: no-repeat;
+}
+.challenge .section-title .one,
+.three {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.challenge .section-title .two {
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+.challenge .button-challenge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.3em;
+  color: #8a8a8a;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+/*     <!-- testimonial--> */
+
+.testimonial {
+  background-color: #171717;
+  border-top: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+}
+.testimonial .testimonial-user {
+  height: 10vh;
+}
+/* <!-- video --> */
+.video-section {
+  background-color: purple;
+}
+/*   <!-- Your course --> */
+.course {
+  background-color: #171717;
+  color: #fff;
+  padding: 0 1.3em;
+  border-top: 1px solid #fff;
+}
+.course .course-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4em;
+  padding: 0.3em;
+}
+.course .course-title .course-title-left {
+  display: flex;
+  align-items: baseline;
+}
+.course .course-title .course-title-left > p {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.course .course-title .course-title-left small {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: rgb(210, 210, 210);
+}
+.course .course-title .course-title-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.course-title-right .edition {
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+.course-title-right .year {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.course .allCourse {
+  text-align: center;
+  display: flex;
+  gap: 3.6em;
+}
+.allCourse .course-box {
+  margin-top: 4em;
+}
+.allCourse .course-box .courseNo {
+  background-color: #fff;
+  color: #171717;
+  letter-spacing: 1px;
+  float: left;
+  margin-right: 100%;
+}
+.course-box .course-deatils {
+  padding: 0.8em 1em 3em 1em;
+}
+.course-box .course-deatils > p {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 1.3em;
+}
+.course-box .course-deatils > p > span {
+  color: purple;
+}
+.course .allCourse .course-box {
+  border: 2px solid #fff;
+  width: 25%;
+}
+.course .allCourse .course-box #course-description {
+  margin-top: 1em;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.course .allCourse .course-box .read-button {
+  margin-top: 1.3em;
+  background-color: purple;
+  color: #fff;
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/*   <!-- newsletter --> */
+.newsletter {
+  background-image: url("./images/pijush.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 2em 3.5em;
+  background-color: #171717;
+  color: #fff;
+}
+.newsletter .newsletter-left {
+  width: 50%;
+}
+.newsletter .newsletter-right {
+  width: 50%;
+}
+.newsletter .newsletter-right .newsletter-description {
+  padding: 2em;
+  text-align: center;
+}
+.newsletter-right .newsletter-description > h2 {
+  color: purple;
+  font-size: 33px;
+  letter-spacing: 2px;
+}
+.pd-des {
+  margin-top: 0.5em;
+}
+.newsletter .newsletter-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+}
+form .pd-form {
+  padding: 0.8em 0.5em;
+  resize: none;
+  border: 2px solid purple;
+  color: #fff;
+  outline: none;
+  background-color: #171717;
+}
+form .button-message {
+  border: none;
+  width: 120px;
+  background-color: purple;
+  font-size: 13px;
+  font-weight: 600;
+}
+/* footer */
+.footer {
+  background-color: purple;
+  color: #fff;
+  padding: 8em 3em 3em 3em;
+  display: flex;
+}
+.footer .footer-col {
+  width: 33%;
+}
+.footer .footer-col .footer-col-title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0.4em;
+}
+.footer .footer-col ul {
+  list-style-type: none;
+  font-size: 19px;
+  font-weight: 500;
+}
+.footer .footer-col ul li {
+  padding-bottom: 0.3em;
+}
+.footer .footer-newslettrer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer-col-title + input {
+  background-color: purple;
+  border: 2px solid #fff;
+  outline: none;
+  width: 100%;
+  padding: 0.7em 0.4em;
+  margin-bottom: 0.6em;
+}
+.footer-newslettrer .icon-list a {
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: purple;
+  margin-left: 1.2em;
+}
+.footer-newslettrer .follow-icon {
+  padding: 1.6em 0;
+  display: flex;
+  /* gap: 2em; */
+}

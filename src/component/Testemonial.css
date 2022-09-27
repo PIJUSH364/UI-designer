@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --uniqueColor1: #cec0fc;
+  --uniqueColor2: #5624d0;
+  --uniqueColor3: #9577f9;
+  --uniqueBackground: #1c1d1f;
+  --uniqueBorder-top: 1px solid #3e4143;
+  --uniqueFontFamily: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+    Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol;
+  --uniqueFontWeight: 400;
+  --uniqueLineHeight: 1.4;
+  --uniqueFontSize: 2.4rem;
+}
+.testimonial {
+  background-color: #171717;
+  color: #fff;
+  text-align: center;
+  padding: 3em 0;
+}
+.testimonial-title > p {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.testimonial-title .sub-testimonial-title {
+  font-size: 30px;
+  font-weight: 300;
+  color: var(--uniqueColor3);
+}
+.testimonial .testimonial-user {
+  padding-top: 40px;
+}
+@media (max-width: 500px) {
+  .testimonial-title > p {
+    font-size: 42px;
+  }
+  .testimonial-title .sub-testimonial-title {
+    font-size: 21px;
+  }
+}

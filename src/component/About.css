@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --uniqueColor1: #cec0fc;
+  --uniqueColor2: #5624d0;
+  --uniqueColor3: #9577f9;
+  --uniqueBackground: #1c1d1f;
+  --uniqueBorder-top: 1px solid #3e4143;
+  --uniqueFontFamily: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+    Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol;
+  --uniqueFontWeight: 400;
+  --uniqueLineHeight: 1.4;
+  --uniqueFontSize: 2.4rem;
+}
+.about {
+  color: #fff;
+  background-color: #171717;
+  padding: 2em 3em;
+}
+.about .about-col {
+  width: 50%;
+}
+.about .about-title {
+  font-size: 65px;
+  font-weight: 600;
+}
+.about .about-title > span {
+  color: var(--uniqueColor3);
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.about-left {
+  padding: 0 5em;
+}
+.about-description {
+  font-size: 16px;
+  font-weight: 500;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  margin: 2em 0;
+}
+.about ul {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1.5em;
+  justify-content: space-around;
+  font-size: 16px;
+  font-weight: 500;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  padding-left: 1em;
+}
+.about ul li {
+  width: 50%;
+  list-style-type: square;
+}
+.about .about-button {
+  background-color: var(--uniqueColor3);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 1em 1.4em;
+  border: none;
+}
+.readmore-about-button {
+  padding: 3em 0em;
+}
+/* responsive */
+
+@media (max-width: 800px) {
+  .about-left {
+    padding: 0 0em;
+  }
+}
+@media (max-width: 500px) {
+  .about {
+    padding: 3em 1em 0em 1em;
+  }
+  .about-left {
+    padding: 0;
+  }
+  .about .about-col {
+    width: auto;
+  }
+  .about .about-title {
+    font-size: 43px;
+  }
+  .about .about-title > span {
+    font-size: 28px;
+  }
+  .about-description {
+    text-align: justify;
+  }
+  .about ul {
+    padding-top: 0px;
+    flex-wrap: wrap;
+    row-gap: 0.51em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .readmore-about-button {
+    padding: 2em 0em;
+  }
+  .about-description {
+    font-weight: 100;
+    word-spacing: 2px;
+
+    line-height: 22px;
+  }
+}

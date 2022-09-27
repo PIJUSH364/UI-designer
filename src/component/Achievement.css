@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --uniqueColor1: #cec0fc;
+  --uniqueColor2: #5624d0;
+  --uniqueColor3: #9577f9;
+  --uniqueBackground: #1c1d1f;
+  --uniqueBorder-top: 1px solid #3e4143;
+  --uniqueFontFamily: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont,
+    Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+    segoe ui emoji, segoe ui symbol;
+  --uniqueFontWeight: 400;
+  --uniqueLineHeight: 1.4;
+  --uniqueFontSize: 2.4rem;
+}
+.achievement {
+  background-color: #171717;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 3em 3.5em;
+}
+.achievement .number {
+  display: flex;
+  align-items: center;
+}
+.achievement .number i {
+  color: var(--uniqueColor3);
+  font-size: 22px;
+}
+.achievement-box p {
+  font-size: 35px;
+  font-weight: 700;
+}
+.achievement .achievement-box {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.achievement .achievement-box .subtag {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.achievement .achievement-box .maintag {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+/* responsive */
+@media (max-width: 500px) {
+  .achievement {
+    padding: 1em;
+  }
+  .achievement-box p {
+    font-size: 20px;
+  }
+  .achievement .achievement-box .maintag {
+    font-size: 8px;
+  }
+  .achievement .achievement-box .subtag {
+    font-size: 8px;
+  }
+  .achievement .number i {
+    font-size: 15px;
+  }
+}
