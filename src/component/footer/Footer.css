@@ -77,7 +77,37 @@ input {
   justify-content: space-between;
   align-items: center;
 }
+.click_up{
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  right: 0.4rem;
+  bottom: 1rem;
+  padding: 0.8rem;
+  background-color: #fff;
+  color: #5624d0;
+  position: fixed;
+}
+.fa-arrow-up{
+  font-size: 1.3rem;
+}
+.click_up{
+  color: var(--uniqueColor3);
+    transform: translatey(0px);
+    animation: float 3.5s ease-in-out infinite;
+}
 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-15px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
 /* responsive */
 @media (max-width: 500px) {
   .footer {

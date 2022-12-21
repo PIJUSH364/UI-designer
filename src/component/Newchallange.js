@@ -16,7 +16,7 @@ function Newchallange() {
       <div className="button-challenge">
         <p>EXPLORE</p>
         <p>
-          <i className="fa-solid fa-arrow-down-long"></i>
+          <i className="fa-solid fa-arrow-down-long iconAnimation" />
         </p>
         <p>ABOUT</p>
       </div>

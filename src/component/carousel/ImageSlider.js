@@ -3,11 +3,42 @@ import "./Carousel.css";
 import { SliderData } from "./SliderData";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
+import { Scale } from '@mui/icons-material';
 
 function ImageSlider({ slides }) {
   const [current, setCurrent] = useState(0);
+  const [isHoverLeft, setIsHoverLeft] = useState(false);
+  const [isHoverRight, setIsHoverRight] = useState(false);
+
   const length = SliderData.length;
   //   console.log(length);
+  
+  // hover effect create help of useState
+  const handleMouseEnterLeft = () => {
+    setIsHoverLeft(true);
+  };
+
+  const handleMouseLeaveLeft = () => {
+    setIsHoverLeft(false);
+  };
+
+  const handleMouseEnterRight = () => {
+    setIsHoverRight(true);
+  };
+
+  const handleMouseLeaveRight = () => {
+    setIsHoverRight(false);
+  };
+  const leftIcon = {
+    transition: 'all 1s ease-in-out',
+    transform: isHoverLeft ? 'scale(1.4)' : '',
+    color: isHoverLeft ? '#9577f9' : '#fff',
+  };
+  const rightIcon = {
+    transition: 'all 1s ease-in-out',
+    transform: isHoverRight ? 'scale(1.4)' : '',
+    color: isHoverRight ? '#9577f9' : '#fff',
+  };
 
   const NextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
@@ -22,9 +53,17 @@ function ImageSlider({ slides }) {
   }
   return (
     <div className="slider">
-      {/* onClick={prevSlide}  onClick={NextSlide}*/}
-      <KeyboardDoubleArrowLeftIcon className="left-arrow" onClick={prevSlide} />
+      <KeyboardDoubleArrowLeftIcon
+        style={leftIcon}
+        onMouseEnter={handleMouseEnterLeft}
+        onMouseLeave={handleMouseLeaveLeft}
+        className="left-arrow"
+        onClick={prevSlide}
+      />
       <KeyboardDoubleArrowRightIcon
+        style={rightIcon}
+        onMouseEnter={handleMouseEnterRight}
+        onMouseLeave={handleMouseLeaveRight}
         className="right-arrow"
         onClick={NextSlide}
       />
@@ -33,16 +72,14 @@ function ImageSlider({ slides }) {
         return (
           <div
             key={index}
-            className={index === current ? "slide active" : "slide"}
-          >
+            className={index === current ? 'slide active' : 'slide'}>
             {index === current && (
               <div
                 style={{
                   backgroundImage: `url(${slide.image})`,
                   // background: "black",
                 }}
-                className="image"
-              >
+                className="image">
                 {/* update content */}
                 <div className="imgTextcontent">
                   <div className="section-up">

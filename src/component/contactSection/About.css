@@ -94,6 +94,19 @@
 .readmore-about-button {
   padding: 3em 0em;
 }
+/* obsever animation */
+.hidden--about {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 4s ease-in-out;
+  transform: translateX(-5rem);
+}
+.show--about {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
 /* responsive */
 
 @media (max-width: 800px) {

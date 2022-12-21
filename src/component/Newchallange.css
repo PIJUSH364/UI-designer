@@ -32,6 +32,7 @@
 }
 .challenge .section-title .two {
   font-size: 43px;
+  color: var(--uniqueColor3);
   letter-spacing: 1px;
   line-height: 1.7;
 }
@@ -46,8 +47,27 @@
   padding-top: 3em;
 }
 .challenge .button-challenge p i {
-  color: #fff;
+  /* color: #fff; */
   transform: scaleY(1.57);
+}
+
+
+.iconAnimation{
+  color: var(--uniqueColor3);
+    transform: translatey(0px);
+    animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
 /* responsive */
 @media (max-width: 500px) {

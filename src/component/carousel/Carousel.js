@@ -3,9 +3,8 @@ import "./Carousel.css";
 import ImageSlider from "./ImageSlider";
 import { SliderData } from "./SliderData";
 function Carousel() {
-  // const slideData=SliderData;
   return (
-    <div className="carousel">
+    <div className="carousel" id="homeSection">
       <ImageSlider slides={SliderData} />
     </div>
   );

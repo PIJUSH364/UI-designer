@@ -1,6 +1,11 @@
 import React from "react";
 import "./Newsletter.css";
+
 function Newsletter() {
+  const handalesubmit = (e) => {
+    e.preventDefault();
+    alert('submit Successfull');
+  };
   return (
     <div className="newsletter">
       <div className="newsletter-left"></div>
@@ -13,27 +18,25 @@ function Newsletter() {
             reprehenderit maxime consequuntur.
           </p>
         </div>
-        <form>
+        <form onSubmit={handalesubmit}>
           <input
             className="pd-form input-placeholder"
             type="text"
+            name="fullName"
             placeholder="NAME"
           />
           <input
             className="pd-form input-placeholder"
-            type="MAIL"
-            name=""
-            id=""
+            type="email"
+            name="email"
             placeholder="your email"
           />
           <textarea
             className="pd-form input-placeholder"
-            name=""
-            id=""
+            name="message"
             cols="20"
             rows="6"
-            placeholder="MESSAGE"
-          ></textarea>
+            placeholder="MESSAGE"></textarea>
           <div className="button-box">
             <button type="submit" className=" button-message">
               SEND MESSAGE

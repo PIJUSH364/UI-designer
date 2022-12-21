@@ -1,15 +1,21 @@
 import React, { useEffect } from "react";
 import "./Slide.css";
+
+// rattng image
+const rating =
+  'https://cdn.pixabay.com/photo/2013/07/12/17/39/star-152151__340.png';
+const ratingImageSrc = [rating, rating, rating, rating, rating];
+
 function Slide(props) {
   useEffect(() => {
-    const hiddenElement = document.querySelectorAll(".hidden");
+    const hiddenElement = document.querySelectorAll('.hidden');
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
         if (e.isIntersecting) {
-          e.target.classList.add("show");
+          e.target.classList.add('show');
         } else {
-          e.target.classList.remove("show");
+          e.target.classList.remove('show');
         }
       });
     });
@@ -31,26 +37,9 @@ function Slide(props) {
         <p>{props.name}</p>
       </div>
       <div className="user--rating hidden">
-        <img
-          src="https://cdn.pixabay.com/photo/2013/07/12/17/39/star-152151__340.png"
-          alt="review"
-        />
-        <img
-          src="https://cdn.pixabay.com/photo/2013/07/12/17/39/star-152151__340.png"
-          alt="review"
-        />
-        <img
-          src="https://cdn.pixabay.com/photo/2013/07/12/17/39/star-152151__340.png"
-          alt="review"
-        />
-        <img
-          src="https://cdn.pixabay.com/photo/2013/07/12/17/39/star-152151__340.png"
-          alt="review"
-        />
-        <img
-          src="https://cdn.pixabay.com/photo/2013/07/12/17/39/star-152151__340.png"
-          alt="review"
-        />
+        {ratingImageSrc.map((src, key) => (
+          <img key={key} src={src} alt="review" />
+        ))}
       </div>
       <div className="user--review hidden">
         <p>

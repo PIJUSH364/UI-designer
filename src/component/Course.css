@@ -127,6 +127,26 @@
   font-size: 15px;
   font-weight: 600;
 }
+/* animation */
+.iconAnimationXaxis{
+  font-size: 600;
+  font-size: 1.52rem;
+  color: var(--uniqueColor3);
+    transform: translatex(0px);
+    animation: floatx 2.5s ease-in-out infinite;
+}
+
+@keyframes floatx {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-15px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
 /* responsive */
 @media (max-width: 1000px) {
   .course {

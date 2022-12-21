@@ -74,6 +74,13 @@ form .button-message {
   font-weight: 600;
   color: #fff;
   padding: 0.8em 1.6em;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+form .button-message:hover {
+   background-color: rgb(149, 119, 249,0.8);
+ 
+transform: scale(1.1);
 }
 form .button-box {
   display: flex;

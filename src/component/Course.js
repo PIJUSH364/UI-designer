@@ -2,12 +2,7 @@ import React from "react";
 import "./Course.css";
 function Course() {
   return (
-    <div
-      className="course"
-      // style={{
-      //   backgroundImage: `url(${"https://media.istockphoto.com/photos/sun-glitter-on-a-body-of-water-in-the-uk-picture-id1370252920?b=1&k=20&m=1370252920&s=170667a&w=0&h=nEE8QcV81c4eGVcm8LtdQoLSEBcdxLj-S8jybkHiwvY="})`,
-      // }}
-    >
+    <div className="course" id="courseSection">
       <div className="course-title">
         <div className="course-title-left">
           <p>FIND</p>
@@ -78,7 +73,7 @@ function Course() {
       </div>
       <div className="more-corses">
         <p>MORE COURSES</p>
-        <i className="fa-solid fa-arrow-right-long"></i>
+        <i className="fa-solid fa-arrow-right-long iconAnimationXaxis" />
       </div>
     </div>
   );

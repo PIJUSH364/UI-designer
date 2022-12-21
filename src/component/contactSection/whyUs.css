@@ -1,7 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+::root{
   --uniqueColor1: #cec0fc;
   --uniqueColor2: #5624d0;
   --uniqueColor3: #9577f9;
@@ -14,7 +11,12 @@
   --uniqueLineHeight: 1.4;
   --uniqueFontSize: 2.4rem;
 }
-.whyus {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.whyUs {
   color: #fff;
   background-color: #171717;
   padding: 3.4em 8em;
@@ -23,18 +25,18 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.whyusleft {
+.whyUsleft {
   width: 50%;
 }
-.whyusright {
+.whyUsright {
   width: 50%;
   position: relative;
 }
-.whyus-title {
+.whyUs-title {
   font-size: 65px;
   font-weight: 600;
 }
-.whyus-description {
+.whyUs-description {
   font-size: 16px;
   font-weight: 500;
   word-spacing: 3px;
@@ -44,7 +46,7 @@
   text-align: justify;
   padding: 2em 0;
 }
-.whyus-button {
+.whyUs-button {
   background-color: var(--uniqueColor3);
   color: #fff;
   font-size: 17px;
@@ -54,13 +56,13 @@
   transition: all 1.2s ease-in-out;
   cursor: pointer;
 }
-.whyus-button:hover {
+.whyUs-button:hover {
   background-color: #fff;
   color: #5624d0;
   transform: translateY(0.2em);
 }
 
-.whyus-button::before {
+.whyUs-button::before {
   content: "";
   position: absolute;
   width: 8.4em;
@@ -71,47 +73,47 @@
   bottom: 7px;
   transition: all 1.8s ease-in-out;
 }
-.whyus-button:hover.whyus-button::before {
+.whyUs-button:hover.whyUs-button::before {
   opacity: 1;
   outline: 2px solid #fff;
   filter: blur(0);
 }
-.whyus .whyus-title > span {
+.whyUs .whyUs-title > span {
   color: var(--uniqueColor3);
   font-size: 48px;
   font-weight: 400;
   letter-spacing: 2px;
 }
 @media (max-width: 800px) {
-  .whyus {
+  .whyUs {
     padding: 3.4em 4em;
   }
 }
 @media (max-width: 500px) {
-  .whyusleft {
+  .whyUsleft {
     width: auto;
   }
-  .whyusright {
+  .whyUsright {
     width: auto;
   }
-  .whyus {
+  .whyUs {
     padding: 1.4em 1em;
   }
-  .whyus-description {
+  .whyUs-description {
     margin: 0em 0;
     padding: 1.5em 0;
     font-weight: 0;
     line-height: 22px;
     word-spacing: 2px;
   }
-  .whyus-title {
+  .whyUs-title {
     font-size: 43px;
   }
-  .whyus .whyus-title > span {
+  .whyUs .whyUs-title > span {
     color: var(--uniqueColor3);
     font-size: 28px;
   }
-  .whyus-button {
+  .whyUs-button {
     float: right;
   }
 }
@@ -120,11 +122,11 @@
 .hidden--why {
   opacity: 0;
   filter: blur(5px);
-  transition: all 3s ease-in-out;
-  transform: translateY(-5rem);
+  transition: all 4s ease-in-out;
+  transform: translateX(5rem);
 }
 .show--why {
   opacity: 1;
   filter: blur(0);
-  transform: translateY(0);
+  transform: translateX(0);
 }

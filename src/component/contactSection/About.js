@@ -1,15 +1,15 @@
-import React, { useEffect } from "react";
-import "./About.css";
+import React, { useEffect } from 'react';
+import './About.css';
 function About() {
   useEffect(() => {
-    const hiddenElement = document.querySelectorAll(".hidden--why");
+    const hiddenElement = document.querySelectorAll('.hidden--about');
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
         if (e.isIntersecting) {
-          e.target.classList.add("show--why");
+          e.target.classList.add('show--about');
         } else {
-          e.target.classList.remove("show--why");
+          e.target.classList.remove('show--about');
         }
       });
     });
@@ -21,12 +21,12 @@ function About() {
   }, []);
   return (
     <div
+      id="aboutSection"
       className="about"
       style={{
-        backgroundImage: `url(${"https://images.unsplash.com/photo-1516557070061-c3d1653fa646?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&w=1000&q=80"})`,
-      }}
-    >
-      <div className="about-col about-left hidden--why">
+        backgroundImage: `url(${'https://images.unsplash.com/photo-1611020506182-4c4f56cc882a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHF1cmlvdXMlMjBiYWNrZ3JvdW5kJTIwYmxhY2t8ZW58MHx8MHx8&auto=format&fit=crop&w=100&q=80'})`,
+      }}>
+      <div className="about-col about-left hidden--about">
         <p className="about-title">
           About&nbsp;<span>us</span>
         </p>
